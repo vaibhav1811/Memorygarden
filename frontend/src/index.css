@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Patrick+Hand&display=swap');
+
+:root {
+  /* Garden Palette */
+  --color-bg: #fdfbf7;
+  --color-text: #2f3e46;
+  --color-primary: #84a98c;
+  --color-primary-dark: #52796f;
+  --color-secondary: #cad2c5;
+  --color-accent: #f4d35e;
+  --color-rose: #ee6c4d;
+  
+  --font-main: 'Outfit', sans-serif;
+  --font-hand: 'Patrick Hand', cursive; /* For messages/notes */
+  
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  color: var(--color-primary-dark);
+}
+
+.garden-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Utilities */
+.text-hand {
+  font-family: var(--font-hand);
+}
+
+.btn {
+  background: var(--color-primary);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-lg);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
